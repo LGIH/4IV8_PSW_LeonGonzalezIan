@@ -1,0 +1,77 @@
+@keyframes animacion_test{
+    from{
+        background-color: rgb(40, 255, 183);
+    }
+    to{
+        background-color: darkmagenta;
+    }
+}
+
+@keyframes girar{
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes label-animacion{
+    from{
+        transform: rotate(0deg);
+        margin-left: 85vw;
+
+    }
+    to{
+        transform: rotate(180deg);
+    }
+}
+
+.label-container{
+    width: 100%;
+    padding: 1rem;
+    box-sizing: border-box;
+    
+}
+.label{
+    width: 64px;
+    text-align: center;
+    background-color: rgb(180, 200, 75);
+    color: rgb(255, 255, 255);
+    font-size: 1.3rem;
+    padding: 1rem;
+    border-radius: 20px;
+    animation-name: label-animacion;
+    animation-duration: 5s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+.loader{
+    width: 64px;
+    height: 64px;
+    border: 16px solid #672acf;
+    border-top: 16px solid  #c4afff;
+    border-radius: 50%;
+    animation: girar 2s linear infinite;
+}
+.loader-doble{
+    width: 64px;
+    height: 64px;
+    border: 16px solid #60e260;
+    border-top: 16px solid  #00ffff;
+    border-bottom: 16px solid #0096b1;
+    border-radius: 50%;
+    animation: girar 2s linear infinite;
+}
+.animada{
+    width: 100%;
+    background-color: aquamarine;
+    color: bisque;
+    text-align: center;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    animation: animacion_test 2s alternate infinite;
+}
