@@ -121,8 +121,6 @@ body {
     border-radius: 32px;
 }
 
-/* About */
-
 .about {
     text-align: center;
 }
@@ -162,7 +160,6 @@ body {
     width: 40px;
 }
 
-/* Knowledge */
 
 .knowledge {
     background-color: #e5e5f7;
@@ -193,7 +190,6 @@ body {
     display: block;
 }
 
-/* price */
 
 .price{
     text-align: center;
@@ -265,7 +261,6 @@ body {
     box-shadow: 0 0 1px rgba(0, 0, 0, .5);
 }
 
-/* Testimony */
 
 .testimony{
     background-color: #e5e5f7;
@@ -320,8 +315,6 @@ body {
     width: 90%;
     cursor: pointer;
 }
-
-/* Questions */
 
 .questions{
     text-align: center;
@@ -393,7 +386,6 @@ body {
     margin-bottom: 30px;
 }
 
-/* Footer */
 
 .footer{
     background-color: #1D293F;
@@ -482,7 +474,6 @@ body {
     width: 30px;
 }
 
-/* Media queries */
 
 @media (max-width:800px){
     .nav__menu{
@@ -669,9 +660,5 @@ body {
         margin-left: 0;
         
 
-        /* 
-        margin:0;
-        width: 100%;
-        */
     }
 }
