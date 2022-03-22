@@ -1,19 +1,16 @@
 
 //problema 1
+function problema1(palabra){
+    var palabra;
+    let resultado = '';
 
-function problema1(){
-    let resultado= '';
-
-    for(let i = tecto.length - 1; i >= 0; --i){
-        resultado += texto[i];
+    for(let i = palabra.length -1; i >= 0; --i){
+        resultado += palabra[i];
     }
+
     return resultado;
 }
-
-console.log("El contenido de un prompt es del tipo: " + typeof(valor1));
-
-
-
+palabra=prompt('Ingrese una palabra:','');
 
 //problema 2
 
