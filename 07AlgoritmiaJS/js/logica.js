@@ -1,12 +1,15 @@
 
 //problema 1
-const invertirCadena = cadena => {
-    let nuevaCadena = "";
-    for (let x = cadena.length - 1; x >= 0; x--) {
-        nuevaCadena += cadena[x];
+function problema1(){
+    const invertirCadena = cadena => {
+        let nuevaCadena = "";
+        for (let x = cadena.length - 1; x >= 0; x--) {
+            nuevaCadena += cadena[x];
+        }
+        return nuevaCadena;
     }
-    return nuevaCadena;
 }
+
 
 
 
