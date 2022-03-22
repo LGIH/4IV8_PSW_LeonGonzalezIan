@@ -1,16 +1,14 @@
 
 //problema 1
-function problema1(palabra){
-    var palabra;
-    let resultado = '';
-
-    for(let i = palabra.length -1; i >= 0; --i){
-        resultado += palabra[i];
+const invertirCadena = cadena => {
+    let nuevaCadena = "";
+    for (let x = cadena.length - 1; x >= 0; x--) {
+        nuevaCadena += cadena[x];
     }
-
-    return resultado;
+    return nuevaCadena;
 }
-palabra=prompt('Ingrese una palabra:','');
+
+
 
 //problema 2
 
