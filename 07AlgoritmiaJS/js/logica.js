@@ -23,50 +23,51 @@ console.log("El contenido de un prompt es del tipo: " + typeof(valor1));
 function problema3(){
 
     //definir un alfabeto
-    var alfabeto= ["A", "B", "C", "D","E", "F", "G", "H", 
-        "I","J", "K", "L", "M", "N", "O", "P","Q","R", "S", 
-        "T", "U", "V", "W", "X", "Y","Z"]
+    var alfabeto = ['A', 'B', 'C', 'D', 'E', 
+        'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 
+        'N', 'Ñ', 'O', 'P', 'Q', 'R', 'S', 'T',
+        'U', 'V', 'W', 'X', 'Y', 'Z'];
 
-    //Vamos a obtener la entrada de datos
-    var p3_input= document.querySelector('#p3-input');
+    //vamos a obtener la entrada de los datos
+    var p3_input = document.querySelector('#p3-input').value;
 
-    var p3_palabras= p3_input.split(',');
+    var p3_palabras = p3_input.split(',');
 
-    // tengo que eliminar los espacios
+    //tengo que eliminar los espacios
 
     p3_palabras = p3_palabras.map(function (palabra){
         //crear una expresion que me recupere las palabras
-        return palabra.replace(/\s/g, '').toUpperCase()
+        return palabra.replace(/\s/g, '').toUpperCase();
     });
 
     //tengo que calcular cuantos caracteres unicos hay
     var p3_res = '';
-
+    
     p3_palabras.forEach(function (palabra, i){
-        //separar las palabras actuales del array que
+        //separar las palabras actuales del array que 
         //contiene cada letra de dicha palabra
-        var letras_unicas[];
+        var letras_unicas = [];
         var palabra_array = palabra.split('');
 
-        //interacion
-        alfabeto.forEach(function(letra, J){
+        //iteracion
+        alfabeto.forEach(function (letra, J){
             //itero la palabra
             palabra_array.forEach(function (letras_palabras, k){
-                //comprobar que la letra este adentro de el alfabeto
-                if(letras_palabras == letras){
+
+                //comprobar que la letra este dentro del alfabeto
+                if(letras_palabras == letra){
                     //si la letra no la hemos contado
-                    //la agregamos a un array para contar 
+                    //la agregamos a un array para contar
                     //las letras unicas
-                    if(letras_unicas.idexOf(letra)<0){
+                    if(letras_unicas.indexOf(letra)<0){
                         letras_unicas.push(letra);
                     }
                 }
             });
         });
-        p3_res += 'palabra: ' + palabra + ' = ' + letras_unicas.length +'\n';
-
+        p3_res += 'Palabra: ' + palabra + ' = ' + letras_unicas.length + '\n';
     });
     document.querySelector('#p3-output').textContent = p3_res;
-
+   
 
 }
