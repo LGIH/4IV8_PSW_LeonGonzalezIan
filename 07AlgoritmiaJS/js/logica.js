@@ -15,6 +15,7 @@ function problema1(){
     document.querySelector('#p1-output').textContent = resultado;
 
 //problema 2
+
 function problema2(){
 
     //vector x
@@ -84,7 +85,5 @@ function problema3(){
         });
         p3_res += 'Palabra: ' + palabra + ' = ' + letras_unicas.length + '\n';
     });
-    document.querySelector('#p3-output').textContent = p3_res;
-   
-
+    document.querySelector('#p3-output').textContent = p3_res
 }
