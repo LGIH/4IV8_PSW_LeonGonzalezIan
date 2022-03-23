@@ -1,7 +1,6 @@
 
 //problema 1
 function problema1(){
-<<<<<<< HEAD
     var input = document.querySelector('#p1-input').value;
 
     var array = input.split(' ').reverse();
@@ -36,16 +35,6 @@ function problema2(){
     document.getElementById('p2-output').innerHTML = (x1*y1)+(x2*y2)+(x3*y3)+(x4*y4)+(x5*y5)
 
 }
-=======
-    
-}
-
-
-
-
-//problema 2
-
->>>>>>> f013ce535e19b9294d1c67b53a1da1361516d4a2
 
 //problema 3
 
@@ -96,11 +85,5 @@ function problema3(){
         });
         p3_res += 'Palabra: ' + palabra + ' = ' + letras_unicas.length + '\n';
     });
-<<<<<<< HEAD
     document.querySelector('#p3-output').textContent = p3_res
-=======
-    document.querySelector('#p3-output').textContent = p3_res;
-   
-
->>>>>>> f013ce535e19b9294d1c67b53a1da1361516d4a2
 }
