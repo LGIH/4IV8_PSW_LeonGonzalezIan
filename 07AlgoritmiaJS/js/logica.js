@@ -13,7 +13,7 @@ function problema1(){
     });
 
     document.querySelector('#p1-output').textContent = resultado;
-
+}
 //problema 2
 
 function problema2(){
