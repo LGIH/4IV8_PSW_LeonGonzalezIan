@@ -32,6 +32,7 @@ public class Parametros extends HttpServlet {
         try (PrintWriter out = response.getWriter()) {
             /* TODO output your page here. You may use following sample code. */
             String nombre = "";
+<<<<<<< HEAD
             String correo = "";
             int telefono = 0;
             
@@ -52,6 +53,11 @@ public class Parametros extends HttpServlet {
             host = request.getRemoteHost();
             
             
+=======
+            
+            //vamos a obtener el parametro
+            nombre = request.getParameter("nombre");
+>>>>>>> 457bf1db9daa24cb9ee1ab49ca9f06e01d0c4e58
             
             out.println("<!DOCTYPE html>");
             out.println("<html>");
@@ -61,6 +67,7 @@ public class Parametros extends HttpServlet {
             out.println("<body>");
             out.println("<h1>Hola mundo, tu nombre es :"
                     +nombre+" </h1>"
+<<<<<<< HEAD
                             + "<br>"
                             + "<h1>Tu Telefono es: "+telefono+" </h1>"
                             + "<br>"
@@ -75,6 +82,8 @@ public class Parametros extends HttpServlet {
                             + "<h1>Nombre Local Maq es: " + nombremaquina+ "</h1>"
                             + "<br>"
                             + "<h1>Puerto: " + puerto + "</h1>"
+=======
+>>>>>>> 457bf1db9daa24cb9ee1ab49ca9f06e01d0c4e58
                             + "<a href='index.html'>Regresar a Principal</a>");
             out.println("</body>");
             out.println("</html>");
